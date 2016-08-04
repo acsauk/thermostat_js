@@ -11,7 +11,7 @@
   border-style: solid;
   margin-top: 50px;
   padding: 30px;
-  background-color: gray;
+  background-image: url("brushed-alum.png");
   border-radius: 25px;
   box-shadow: 30px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -36,8 +36,18 @@
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  background-color: lightblue;
-
+  background: radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+background-color: #300;
+background-size: 100px 100px;;
 }
 
 #right-section {
@@ -45,7 +55,6 @@
   /*border-style: solid;*/
   width: 27%;
   vertical-align: top;
-
 }
 
 #bottom-section {
@@ -70,14 +79,23 @@ button {
 #cities {
 
 }
-#output {}
-#buttons {}
+
+#output {
+
+
+}
+#buttons {
+  width: 50%;
+  margin: 0 auto;
+}
 
 #psm-mode {
+  width: 50%;
   margin: 0 auto;
   /*border-style: solid;*/
 }
 
 body {
-  background-color: blue;
+  height: 100%;
+  background: radial-gradient(red 50%, blue);
 }

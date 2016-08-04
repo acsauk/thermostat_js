@@ -5,21 +5,29 @@ $(document).ready(function(){
   function updateCurrentTemp() {
     $('#temperature').text(thermostat.temperature);
     $('#temperature').attr('class', thermostat.energyUsage());
+    $("#temperature").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
   };
 
   $("#increase-temp").click(function() {
     thermostat.up();
     updateCurrentTemp();
+    var red = thermostat.temperature * 2.5;
+    var blue = 100 - red;
+    $("body").css({"background":"radial-gradient(red " + red + "%, blue"});
   });
 
   $("#decrease-temp").click(function() {
     thermostat.down();
     updateCurrentTemp();
+    var red = thermostat.temperature * 2.5;
+    var blue = 100 - red;
+    $("body").css({"background":"radial-gradient(red " + red + "%, blue"});
   });
 
   $("#reset-temp").click(function() {
     thermostat.reset();
     updateCurrentTemp();
+    $("body").css({"background":"radial-gradient(red 50%, blue)"});
   });
 
   $("#psm-on").click(function() {
@@ -38,6 +46,11 @@ $(document).ready(function(){
     displayWeather(city);
   });
 
+  // function updateBackground(firstColor, secondColor){
+  //   v
+  //   $("body").css("body":"linear-gradient(90deg, #FFC0CB  50%, #00FFFF  50%)")
+  // };
+
   displayWeather('London');
 
   function displayWeather(city){
@@ -50,16 +63,4 @@ $(document).ready(function(){
     $("#selected-city").text(city);
   };
 
-
 });
-
-
-
-
-
-
-
-
-
-
-
