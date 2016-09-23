@@ -1,5 +1,7 @@
 # thermostat_js
 
+![](/interface.png)
+
 ### Objectives of project
 
 Makers Academy Javascript/jQuery week - create an interactive thermostat app with a user interface utilising Javascript and jQuery. Integrating with openweathermap API the user can also see the live temperature of any city they enter in the search box.
