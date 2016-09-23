@@ -46,11 +46,6 @@ $(document).ready(function(){
     displayWeather(city);
   });
 
-  // function updateBackground(firstColor, secondColor){
-  //   v
-  //   $("body").css("body":"linear-gradient(90deg, #FFC0CB  50%, #00FFFF  50%)")
-  // };
-
   displayWeather('London');
 
   function displayWeather(city){
